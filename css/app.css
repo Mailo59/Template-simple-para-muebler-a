@@ -1,0 +1,562 @@
+/* HACKS */
+
+/* HACKS */
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /* 1rem = 10px, 10px/16px = 62.50% */
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* FUENTES */
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+    /* 16px */
+    line-height: 2;
+}
+
+
+/* GLOBALES */
+
+h1,
+h2,
+h3 {
+    font-family: 'Playfair Display', serif;
+    margin: 0 0 5rem 0;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 3cqmin;
+}
+
+
+/* HEADER Y NAVEGACION */
+
+a {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+    /* 16px */
+    text-decoration: none;
+    color: black;
+}
+
+h1 span {
+    color: #037bc0;
+}
+
+.nombre-sitio {
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.contenedor-navegacion {
+    background-color: #4e746f;
+    border-color: #e1e1e1;
+    border-top-style: solid;
+    border-width: .1rem;
+    border: 0.1rem solid #2a494b;
+}
+
+
+.navegacion-principal {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Estilo para los enlaces en la navegación */
+.navegacion-principal .enlace {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    /* Aumenta el padding para crear un área de interacción más grande */
+    margin: 0.5rem 0;
+    /* Agrega margen para espaciar los enlaces */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Efecto de hover para los enlaces */
+.navegacion-principal .enlace:hover {
+    color: #d2d7df;
+}
+
+
+.hero {
+    background-image: url(../img/principal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 40rem;
+}
+
+.forms {
+    display: grid;
+    place-items: center;
+}
+
+.forms div {
+    font-weight: 700;
+    border-style: solid;
+    margin-bottom: 5rem;
+    padding: 1rem;
+}
+
+.forms-data div {
+    display: grid;
+    border-style: none;
+    justify-items: start;
+    margin-bottom: .5rem;
+    padding: 1rem;
+    grid-template-columns: repeat(2, .8fr);
+}
+
+.title {
+    margin-top: -4.5rem;
+    background-color: #037bc0;
+    text-align: center;
+}
+
+.title h3 {
+    margin-top: .1rem;
+    margin-bottom: .1rem;
+    text-align: center;
+    color: white;
+}
+
+.forms-data2 div {
+    display: grid;
+    border-style: none;
+    justify-items: start;
+    margin-bottom: .1rem;
+    margin-left: .1rem;
+    margin-right: .1rem;
+    padding: 1rem;
+    grid-template-columns: repeat(2, .5fr);
+}
+
+.listado-categorias {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.categorias {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.categorias h2 {
+    text-align: center;
+}
+
+.categoria a {
+    text-align: center;
+    display: block;
+    padding: 2rem;
+    font-size: 2rem;
+}
+
+.categoria a:hover {
+    background-color: #2a494b;
+    color: #d2d7df;
+    border-bottom-right-radius: 1rem;
+}
+
+.Nosotros {
+    display: flex;
+    padding: 10rem;
+    background-size: 50%, 50%;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.Nosotros-txt {
+    color: black;
+    text-align: left;
+    margin-top: 0;
+    margin-left: 2rem;
+    /* Ajustamos el margen izquierdo */
+}
+
+.Nosotros-titulo {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+.Nosotros-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+
+/*SECCION SOBRE NOSOTROS*/
+.Nosotros-titulo {
+    margin-bottom: -5rem;
+}
+
+.sobre-nosotros {
+    background-image: linear-gradient(to right, transparent 50%, #4e746f 50%, #8cb5ae 100%), url(../img/nosotros.jpg);
+    background-position: left center;
+    padding: 10rem;
+    background-repeat: no-repeat;
+    background-size: 100%, 120rem;
+
+}
+
+.sobre-nosotros-grid {
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 10rem;
+}
+
+.texto-nosotros {
+    color: black;
+    flex-basis: 50%;
+
+}
+
+.contenido-principal {
+    padding-top: 5rem;
+}
+
+.listado-galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    row-gap: 2rem;
+
+}
+
+.imagen {
+    width: 100%;
+    /* Ajusta el ancho según tus necesidades */
+    padding: 3rem;
+    box-sizing: border-box;
+}
+
+.imagen:nth-child(2){
+    width: 95%;
+     }
+    .imagen:nth-child(4){
+
+    width: 97%;
+}
+.imagen:nth-child(5){
+    width: 99%;
+}
+
+.imagen:nth-child(6){
+    width: 95%;
+}
+.imagen:nth-child(8){
+    width: 105%;
+}
+.imagen:nth-child(9){
+    width: 420px;
+}
+
+.listado-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    row-gap: 2rem;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}
+
+.blog {
+    max-width: 100%;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f8f8f8;
+}
+
+.texto-producto {
+    margin-top: 10px;
+}
+
+.listado-productos {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2rem;
+    row-gap: 2rem;
+
+}
+
+.producto {
+    background-color: #DAA520;
+}
+.producto:nth-child(2){
+    background-color: white;
+}
+.producto:nth-child(3){
+    background-color: #DAA520;
+}
+.producto:nth-child(4){
+    background-color: white;
+}
+.producto:nth-child(5){
+    background-color: #DAA520;
+}
+.producto:nth-child(6){
+    background-color: white;
+}
+
+.texto-producto {
+    text-align: center;
+    color: black;
+    padding: 2rem;
+}
+
+.texto-producto h3 {
+    margin: 0;
+}
+
+.texto-producto p {
+    margin: 0 0 .5rem 0;
+}
+
+.texto-producto .precio {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.producto:nth-child(1) {
+    grid-column-start: 1;
+    grid-column-end: 7;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.producto:nth-child(2) {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.producto:nth-child(3) {
+    grid-column-start: 4;
+    grid-column-end: 7;
+}
+
+.producto:nth-child(4) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.producto:nth-child(5) {
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+.producto:nth-child(6) {
+    grid-column-start: 5;
+    grid-column-end: 7;
+}
+
+/*UTILIDADES*/
+.text-center {
+    text-align: center;
+}
+
+.max-width-30 {
+    max-width: 30rem;
+}
+
+.btn {
+    background-color: #4e746f;
+    display: block;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding: 1rem;
+    transition: background-color .3s ease-out;
+    text-align: center;
+
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: #b8946b;
+}
+
+.site-footer {
+    background-color: #2a494b;
+    border-top: .1rem solid black;
+    margin-top: 5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.site-footer h3 {
+    color: #d2a81b;
+}
+
+.site-footer nav a {
+    color: white;
+}
+
+.grid-footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 2rem;
+}
+
+.site-footer .grid-footer .footer-redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-top: 2rem;
+}
+
+.site-footer .grid-footer .footer-redes a {
+    display: block;
+    margin: 0 1rem;
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+
+.facebook {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 100%;
+    color: white;
+    /* Cambia el color del texto según lo desees */
+    transition: background-color 0.3s, color 0.3s;
+    border: .2rem solid #171515;
+}
+
+.site-footer .grid-footer .footer-redes .facebook:hover {
+    color: #00588b;
+    border: .2rem solid #00588b;
+}
+
+.instagram {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 100%;
+    color: white;
+    /* Cambia el color del texto según lo desees */
+    transition: background-color 0.3s, color 0.3s;
+    border: .2rem solid #171515;
+}
+
+.site-footer .grid-footer .footer-redes .instagram:hover {
+    color: #8134AF;
+    border: .2rem solid #8134AF;
+}
+
+.linkedin {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 100%;
+    color: #0e76a8;
+    /* Cambia el color del texto según lo desees */
+    transition: background-color 0.3s, color 0.3s;
+    border: .2rem solid #171515;
+}
+
+.site-footer .grid-footer .footer-redes .linkedin:hover {
+    color: #0e76a8;
+    border: .2rem solid #0e76a8;
+}
+
+.github {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 100%;
+    color: #6666;
+    /* Cambia el color del texto según lo desees */
+    transition: background-color 0.3s, color 0.3s;
+    border: .2rem solid #171515;
+}
+
+.site-footer .grid-footer .footer-redes .github:hover {
+    color: #171515;
+    border: .2rem solid gray;
+}
+
+.facebook:nth-child(1) {
+    background-color: white;
+}
+
+.instagram:nth-child(2) {
+    background-color: white;
+}
+
+.github:nth-child(3) {
+    background-color: white;
+}
+
+.linkedin:nth-child(4) {
+    background-color: white;
+}
+
+.footer-menu a {
+    display: block;
+}
+
+.site-footer h3 {
+    margin-bottom: 1rem;
+}
+
+.copyright {
+    margin-top: 5rem;
+    text-align: center;
+}
+/* ... tu otro CSS ... */
+
+.presentacion {
+    width: 100%;
+    max-width: 600px; /* Ajusta el tamaño máximo de la presentación */
+    margin: 0 auto; /* Centra la presentación en la página */
+    overflow: hidden; /* Oculta contenido que exceda el tamaño de la presentación */
+    position: relative;
+}
+
+.slide {
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    position: absolute;
+    animation: fade 5s infinite; /* Cambia la duración y el tipo de animación según tus necesidades */
+}
+
+@keyframes fade {
+    0%, 100% {
+        opacity: 0;
+    }
+    25%, 75% {
+        opacity: 1;
+    }
+}
